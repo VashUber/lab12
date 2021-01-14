@@ -21,8 +21,13 @@
       <label class="text" for="name">Имя</label>
       <input id="name" v-model="name">
     </form>
-    <button>Добавить</button>
-    <p></p>
+    <p>Количество символов: {{name.length + surname.length}}</p>
+    <button v-on:click="StudentsList" v-bind:disabled="zero">Добавить</button>
+    <h2>Список</h2>
+    <ul v-if="list.length">
+      <li v-for="elem in list">{{elem}}</li>
+    </ul>
+    <p v-else>Список пуст</p>
   </div>
   <script src="script.js"></script>
 </body>

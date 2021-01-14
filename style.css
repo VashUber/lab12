@@ -19,6 +19,7 @@ input{
 }
 .text{
   margin-bottom: 0;
+  margin-top: 10px;
   display:block;
 }
 button{
@@ -31,4 +32,10 @@ button{
 }
 button:hover{
   background-color: #B0C4DE;
+}
+li{
+  list-style-type: none;
+}
+ul {
+  padding-left: 0;
 }
