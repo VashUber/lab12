@@ -4,7 +4,6 @@
     list:[],
     name: "",
     surname: "",
-    counter: 0,
   },
   methods: {
     StudentsList(){
