@@ -21,7 +21,7 @@
       <label class="text" for="name">Имя</label>
       <input id="name" v-model="name">
     </form>
-    <p>Количество символов: {{name.length + surname.length}}</p>
+    <p>Количество символов: {{result | counter}}</p>
     <button v-on:click="StudentsList" v-bind:disabled="zero">Добавить</button>
     <h2>Список</h2>
     <ul v-if="list.length">

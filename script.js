@@ -18,6 +18,14 @@
   computed:{
     zero(){
       return this.surname.length === 0 || this.name.length === 0;
+    },
+    result(){
+      return this.surname.length + this.name.length;
+    }
+  },
+  filters:{
+    counter: function (value) {
+      return value.toString(2)
     }
   },
 })
